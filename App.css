@@ -1,0 +1,83 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: blue;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  background-color: #0056b3;
+}
+
+/* Profile Page */
+.profile-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+/* Quiz Page */
+.quiz-container {
+  padding: 20px;
+}
+
+.timer {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+}
